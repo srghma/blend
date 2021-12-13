@@ -15,7 +15,7 @@ async function main() {
     Object.values(commands).forEach(command => {
         command.register(program)
     })
-    program.parse(process.argv)
+    program.parse(process.argv)// in new v should use parseAsync
 }
 
 main().catch(e => console.error(e))

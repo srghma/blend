@@ -82,7 +82,7 @@ class _BlendEnvironment {
     }
 }
 
-type BlendEnvironment = _BlendEnvironment
+type BlendEnvironment = _BlendEnvironment//?
 type EnvironmentParameters = {
     network: NetworkName,
     from?: Address

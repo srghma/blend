@@ -15,7 +15,7 @@ function isUint(input: any, bitWidth: number) {
     if (typeof input !== 'string' && typeof input !== 'number') return false
     try {
         const n = Utils.toBN(input)
-        const overflow = Utils.toBN(1).iushln(bitWidth)
+        const overflow = Utils.toBN(1).iushln(bitWidth) // inpl, unsing arg, shift left, ret Number not float
         return n.lt(overflow)
     } catch (_) {
         return false

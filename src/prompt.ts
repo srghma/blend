@@ -1,9 +1,9 @@
-import * as inquirer from 'inquirer'
+import * as inquirer from 'inquirer' // filter, validate
 import { PathPrompt } from 'inquirer-path'
 import { getNetworks, loadProjectEnv, BlendEnvironment } from './utils/environment'
 import { NetworkName } from './types'
 
-inquirer.registerPrompt('file-tree-selection', PathPrompt)
+inquirer.registerPrompt('file-tree-selection', PathPrompt)//?
 
 async function promptForNetwork(
     { networkInOpts }: { networkInOpts?: NetworkName}

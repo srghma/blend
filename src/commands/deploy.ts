@@ -31,6 +31,7 @@ async function deploy(
     owner1: Address,
     otherOwners: Address[],
     options: CmdlineOptions
+    //, command
 ): Promise<void> {
     options.owners = [owner1, ...otherOwners]
     options.owners.forEach(owner => {
